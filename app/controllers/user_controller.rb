@@ -9,7 +9,7 @@ require 'json'
       :oauth_token_secret => 'ht9sUCr32iFnEAWvIxzIw86r5URJKErITAhGVbKL4mlKOzGWKi'
     })
     @posts = @client.posts('mckshreder.tumblr.com')
-    @photos = @posts["posts"]
+    @photos = @posts["posts"][1]["photos"]
     
     # uri =  HTTParty.get"http://api.tumblr.com/v2/blog/mckshreder/posts?apikey=76p8HvtPxSMBDbPleLeCBF176HoocXlWIWv0HtEvSWD6qcKwRz"
     # @response = JSON.parse(uri.body)
