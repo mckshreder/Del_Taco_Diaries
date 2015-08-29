@@ -1,7 +1,12 @@
 <h1>Del Taco Diaries</h1>
 <div class="container_fluid">
 
- <%= image_tag(@photos)%>
+<% @photos.each do |photo| %>
+	<div class="photo_container">
+	<%= image_tag(photo["photos"][0]["alt_sizes"][0]["url"])%> 
+	</div>
+<%end%>
+
 
 
 </div>

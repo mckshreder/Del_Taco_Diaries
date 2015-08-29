@@ -36,21 +36,20 @@ html, body {
 	position: relative;*/
 
 }
-img{
-	    width: 20%;
+.photo_container{
     text-align: center;
-    height: 33.333336%;
+
     overflow: hidden;
-    position: absolute;
+
     top: 0px;
     left: 0px;
     bottom: 0px;
     cursor: pointer;
     font-size: 10px;
+	display: block;
     /*opacity: 0;
     transition: opacity .4s ease-in-out;*/
 	/*width: 20%;
-	display: block;
 	float: left;
 	position: absolute;*/
 }
