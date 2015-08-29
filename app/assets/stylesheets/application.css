@@ -16,15 +16,53 @@
 .container{
 	width:90%;
 	margin-left: 4%;
+	display: block;
+}
+html, body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 .column_small{
-	width: 20%;
+/*	max-width: 10% !important;
+	height: 100%;
 	margin: 5px;
-	position: inline-block;
+	display: inline-block;
+	padding-top: 0;
+	margin-top: 0;
+	position: relative;*/
+
 }
 img{
-	width: 100%;
+	    width: 20%;
+    text-align: center;
+    height: 33.333336%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    cursor: pointer;
+    font-size: 10px;
+    /*opacity: 0;
+    transition: opacity .4s ease-in-out;*/
+	/*width: 20%;
+	display: block;
+	float: left;
+	position: absolute;*/
 }
-iframe{
+/*iframe{
 	width:100%;
 }
+h1{
+	text-align: center;
+}
+p{
+	position: absolute;
+}
+h1{
+	position: absolute;
+}*/
