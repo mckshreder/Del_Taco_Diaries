@@ -13,18 +13,13 @@
  *= require_tree .
  *= require_self
  */
-.container{
-	width:90%;
-	margin-left: 4%;
-	display: block;
-}
+
 html, body {
     width: 100%;
     margin: 0px;
     padding: 0px;
     height: 100%;
-    overflow: hidden;
-    position: relative;
+
 }
 .column_small{
 /*	max-width: 10% !important;
@@ -38,21 +33,14 @@ html, body {
 }
 .photo_container{
     text-align: center;
-
-    overflow: hidden;
-
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
     cursor: pointer;
     font-size: 10px;
-	display: block;
-    /*opacity: 0;
-    transition: opacity .4s ease-in-out;*/
-	/*width: 20%;
-	float: left;
-	position: absolute;*/
+	display: inline-block;
+	width:30%;
+
 }
+
+
 /*iframe{
 	width:100%;
 }

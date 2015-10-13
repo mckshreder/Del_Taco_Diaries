@@ -3,10 +3,9 @@
 
 <% @photos.each do |photo| %>
 	<div class="photo_container">
-	<%= image_tag(photo["photos"][0]["alt_sizes"][0]["url"])%> 
+	<%= image_tag(photo["photos"][0]["alt_sizes"][1]["url"], :crop => :fill) %> 
 	</div>
 <%end%>
-
 
 
 </div>

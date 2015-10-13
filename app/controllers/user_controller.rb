@@ -11,12 +11,6 @@ require 'json'
     @posts = @client.posts('mckshreder.tumblr.com', :type => "photo", :limit => 10)
     @photos = @posts["posts"]
     # @photos = @posts["posts"][0]["photos"][0]["alt_sizes"][0]["url"]
-   
-
-  
-    # uri =  HTTParty.get"http://api.tumblr.com/v2/blog/mckshreder/posts?apikey=76p8HvtPxSMBDbPleLeCBF176HoocXlWIWv0HtEvSWD6qcKwRz"
-    # @response = JSON.parse(uri.body)
-
   end
 
   def show
