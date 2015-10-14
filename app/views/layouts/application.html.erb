@@ -1,14 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LennyApp</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+
+<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600%7CMontserrat:400,700%7COpen+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="assets/fonts.css">
+
+
+
+  <!-- ICONS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="assets/ionicons.min.css">
 </head>
 <body>
 
 <%= yield %>
 
+<script src="assets/libs/common.js"></script>
+<script src="assets/libs/jquery-ui.min.js"></script>
+<script src="assets/libs/bootstrap.min.js"></script>
+<script src="assets/libs/FlickrAPI.js"></script>
+<script src="assets/libs/Flickr.Gallery.min.js"></script>
+<script src="assets/custom/main.js"></script>
+<script>
+
+$(document).ready(function (){ 
+  $("#gallery").flickrGallery({
+            //FLICKR API KEY
+            Key: '56389fa5d9785bb7a02bc88f7d565a06',
+            //Secret
+            Secret: '22e5a077b803278f',
+            //FLICKR user ID
+            User: '136192393@N03',
+            //Flickr PhotoSet ID
+            PhotoSet: '72157659407019348',
+            /*-- VIEWBOX SETTINGS --*/ 
+            Speed   : 400,    //Speed of animations
+            navigation  : 1,    //(true) Navigation (arrows)
+            keyboard  : 1,    //(true) Keyboard navigation 
+            numberEl  : 1     //(true) Number elements
+  });
+}); 
+
+  </script>
 </body>
 </html>
